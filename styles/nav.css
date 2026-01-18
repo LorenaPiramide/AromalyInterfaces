@@ -1,12 +1,59 @@
+body {
+    background-color: #F9F1E0;
+    padding-top: 100px;
+    margin: 0;
+}
+
 .fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
+
+    /*Prueba*/
+    background-color: #F9F1E0;
 }
 
 .nav-aromaly ul {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     list-style: none;
+
+    padding: 0 20px;
+    margin: 0;
+    height: 80px;
+}
+
+.logo-aromaly {
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo-aromaly a img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-aromaly button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F9F1E0;
+    border-radius: 20px;
+    border: solid 1px black;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 7px;
+}
+
+.nav-aromaly button img {
+    width: 20px;
+    height: 20px;
 }
