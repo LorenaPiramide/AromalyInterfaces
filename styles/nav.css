@@ -13,12 +13,10 @@ body {
     z-index: 1;
 }
 
-.nav-aromaly ul {
+.nav-aromaly {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    list-style: none;
 
     padding: 0 20px;
     margin: 0;
@@ -26,7 +24,6 @@ body {
 }
 
 .logo-aromaly {
-    margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
 
@@ -34,9 +31,8 @@ body {
     justify-content: center;
 }
 
-.logo-aromaly a img {
-    display: block;
-    margin-top: 5px;
+.logo-aromaly img {
+    margin-top: 10px;
     width: 200px;
     height: auto;
 }
