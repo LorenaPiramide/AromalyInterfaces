@@ -21,6 +21,10 @@ body {
     padding: 0 20px;
     margin: 0;
     height: 80px;
+
+    background: rgba(164, 140, 123, 0.75);
+    backdrop-filter: blur(8px);
+    /* -webkit-backdrop-filter: blur(8px); */
 }
 
 .logo-aromaly {
@@ -55,6 +59,11 @@ body {
     height: 20px;
 }
 
+.img-perfume img {
+    width: 60vh;
+    height: auto;
+}
+
 .perfume {
     display: flex;
     flex-direction: row;
@@ -66,12 +75,8 @@ body {
 .descripcion-perfume {
     width: 100vh;
     height: auto;
+    padding: 20px;
     border-radius: 20px;
 
     background-color: #DDD5CC;
-}
-
-.img-perfume img {
-    width: 60vh;
-    height: auto;
 }
