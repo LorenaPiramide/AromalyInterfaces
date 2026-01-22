@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Soir</title>
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,7 +29,7 @@
         <div class="img-perfume"><img src="artwork/perfume info/Grand-Soir.png"></div>
         <div class="descripcion-perfume">
             <h1>Grand Soir</h1>
-            <a href=""><img class="logo-marca-perfume" src="artwork/perfume info/Logo-MaisonFrancisKurkdjian.png" alt=""></a>
+            <a href="perfume.html"><img class="logo-marca-perfume" src="artwork/perfume info/Logo-MaisonFrancisKurkdjian.png" alt=""></a>
             <p>El eau de parfum Grand Soir Maison Francis Kurkdjian le invita a vestir sus mejores galas y perfeccionar su estilo. Antes de que se ilumine la Ciudad 
                 de la Luz, el cielo se tiñe de una gama de matices deslumbrantes, del tono miel hasta al ámbar fascinante. <br><br>
                 Ambarino y amaderado, vibrante y cautivador, Grand Soir resplandece con un brillo sensual. Desde el primer instante, 
@@ -32,11 +38,24 @@
                 Simplemente irresistible.
             </p>
             <div class="datos-base-perfume">
-                <h5>Género: <img src="artwork/perfume info/unisex.png"></h5>
-                <h5>Perfumista: <a href="perfume.html"></a></h5> <!--Aquí iría el link al perfumista. TODO: El Slider de las votaciones se llama range slider-->
+                <h5 class="familia-olfativa">Familia olfativa: 
+                    <a href="perfume.html">
+                        <div class="chip-familia-olfativa">Amaderada</div>
+                    </a>
+                    <a href="perfume.html">
+                        <div class="chip-familia-olfativa">Ámbar</div>
+                    </a>
+                </h5>
+                <h5 class="genero">Género: <img src="artwork/perfume info/unisex.png"></h5>
+                <h5>Perfumista: <a href="perfume.html">Francis Kurkdjidan</a></h5> <!--Aquí iría el link al perfumista. TODO: El Slider de las votaciones se llama range slider-->
                 <h5>Fecha de lanzamiento: 2016</h5>
             </div>
         </div>
+    </div>
+    <div class="piramide-olfativa">
+        <div class="notas-salida"></div>
+        <div class="notas-corazon"></div>
+        <div class="notas-base"></div>
     </div>
 </body>
 </html>
