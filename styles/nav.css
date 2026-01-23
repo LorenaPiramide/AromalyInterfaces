@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(0deg,rgba(239, 236, 230, 1) 0%,  rgba(157, 131, 111, 1)100%);
+    background: var(--color-fondo-degradado);
     margin: 0;
     min-height: 100vh;
     padding-top: 80px;
@@ -45,7 +45,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background: #FBF7F4;
+    background: var(--color-buttons);
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -82,40 +82,42 @@ body {
     padding: 30px;
     border-radius: 20px;
 
-    background-color: #DDD5CC;
+    background-color: var(--color-cards);
 }
 
-.descripcion-perfume h1 {
+h1 {
     margin-left: 10px;
-    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-titles);
     font-size: 25px;
+    
 }
 
 .logo-marca-perfume {
+    
     width: 200px;
     height: auto;
     margin-left: 5px;
-    filter: drop-shadow(-1px -1px 0 black);
+    filter: var(--filter-logo-brand);
 }
 
-.descripcion-perfume p {
+p {
     font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 10px;
 }
 
-.descripcion-perfume h5 {
+h5,p {
     margin-left: 10px;
     font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
 }
 
-.descripcion-perfume h5.familia-olfativa {
+.familia-olfativa {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.descripcion-perfume h5.genero {
+.genero {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -126,10 +128,6 @@ body {
     height: auto;
 }
 
-.descripcion-perfume h5 a {
-    text-decoration: none;
-}
-
 .chip-familia-olfativa {
     display: inline-block;
     padding: 0 25px;
@@ -137,11 +135,53 @@ body {
     font-size: 12px;
     line-height: 20px;
     border-radius: 25px;
-    background: rgba(191, 167, 150, 0.75);
+    background: var(--color-chip);
 }
 
 a {
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+.piramide-olfativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.div-padre-piramide {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 30vh;
+}
+
+.notas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vh;
+    height: auto;
+
+    padding-left: 20px;
+
+    border-radius: 25px;
+    background: #DDD5CC;
+}
+
+.div-padre-img-notas {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-nota {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: white;
 }

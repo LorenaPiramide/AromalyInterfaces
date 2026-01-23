@@ -1,0 +1,8 @@
+:root {
+    --color-fondo-degradado: linear-gradient(0deg,rgba(239, 236, 230, 1) 0%,  rgba(157, 131, 111, 1)100%);
+    --color-cards: #DDD5CC;
+    --color-buttons: #FBF7F4;
+    --color-chip: rgba(191, 167, 150, 0.75);
+    --font-titles: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --filter-logo-brand: drop-shadow(-1px -1px 0 black);
+}
