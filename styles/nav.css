@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-buttons);
+    background: var(--color-buttons-nav);
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -233,7 +233,7 @@ a {
 .div-epoca-checkbox {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .epoca-checkbox {
@@ -245,4 +245,77 @@ a {
     width: 20px;
     height: auto;
     margin: 10px;
+}
+
+.range-slider-duracion, .range-slider-precio {
+    height: 100px;
+}
+
+.range-slider-duracion ul,
+.range-slider-precio ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Línea del slider*/
+.range-slider-duracion ul::before,
+.range-slider-precio ul::before {
+    content: '';
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    top: 15px;
+    height: 4px;
+    background: #ffffff;
+}
+
+.range-slider-duracion li,
+.range-slider-precio li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+/*Quitamos el radio*/
+.range-slider-duracion input, 
+.range-slider-precio input {
+    display: none;
+}
+
+/*Cursor*/
+.range-slider-duracion label, 
+.range-slider-precio label {
+    cursor: pointer;
+}
+
+/*Estilo de los puntos del slider por defecto*/
+.range-slider-duracion label::before, 
+.range-slider-precio label::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 10px auto;
+    background: var(--color-buttons-slider);
+    border-radius: 50%;
+}
+
+/*Punto activo*/
+.range-slider-duracion input:checked + label::before, .range-slider-precio input:checked + label::before {
+    background: #f75;
+}
+
+/*Texto del slider*/
+.range-slider-duracion span, .range-slider-precio span {
+    font-size: 14px;
+}
+
+/*Texto del slider seleccionado*/
+.range-slider-duracion input:checked + label span, .range-slider-precio input:checked + label span {
+    display: block;
+    color: #f75;
 }
