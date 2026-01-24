@@ -241,14 +241,30 @@ a {
     align-items: center;
 }
 
+.epoca-checkbox input {
+    display: none;
+}
+
 .epoca-checkbox img {
     width: 20px;
     height: auto;
     margin: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.epoca-checkbox img:hover {
+    transform: scale(1.5);
+}
+
+.epoca-checkbox input:checked + img {
+    filter: grayscale(0%) brightness(1.2) saturate(2);
+    transform: scale(1.5);
 }
 
 .range-slider-duracion, .range-slider-precio {
-    height: 100px;
+    height: 60px;
 }
 
 .range-slider-duracion ul,
@@ -302,20 +318,57 @@ a {
     margin: 10px auto;
     background: var(--color-buttons-slider);
     border-radius: 50%;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.range-slider-duracion label:hover::before,
+.range-slider-precio label:hover::before {
+    transform: scale(1.5);
 }
 
 /*Punto activo*/
-.range-slider-duracion input:checked + label::before, .range-slider-precio input:checked + label::before {
+.range-slider-duracion input:checked + label::before, 
+.range-slider-precio input:checked + label::before {
     background: #f75;
+    transform: scale(1.2);
 }
 
 /*Texto del slider*/
-.range-slider-duracion span, .range-slider-precio span {
+.range-slider-duracion span, 
+.range-slider-precio span {
     font-size: 14px;
 }
 
 /*Texto del slider seleccionado*/
-.range-slider-duracion input:checked + label span, .range-slider-precio input:checked + label span {
+.range-slider-duracion input:checked + label span, 
+.range-slider-precio input:checked + label span {
     display: block;
     color: #f75;
+}
+
+.div-rating {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.rating {
+    direction: rtl; /*Si no se pone esto, queda del revés*/
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.rating input {
+    display: none; /*Quitamos la bola del input*/
+}
+
+.rating label {
+    color: lightgray;/*Estrellas en gris*/
+    cursor: pointer;
+    text-shadow: 1px 1px 3px black;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
 }
