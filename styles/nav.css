@@ -54,6 +54,26 @@ body {
     height: 20px;
 }
 
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 25px;
+    background: var(--color-chip);
+    font-family: var(--font-body);
+    margin: 5px;
+}
+
+.card-descripcion-perfume, .card-notas, .card-valoracion, .card-similares {
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--color-cards);
+    box-shadow: var(--shadow-cards);
+}
+
 .img-perfume img {
     width: 45vh;
     height: auto;
@@ -67,23 +87,24 @@ body {
     margin-top: 40px;
 }
 
-.descripcion-perfume {
+.card-descripcion-perfume {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 70vh;
-    height: auto;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: var(--color-cards);
-    box-shadow: var(--shadow-cards);
 }
 
-h1, h2 {
+h1, 
+h2 {
     margin-left: 10px;
     font-family: var(--font-titles);
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 .logo-marca-perfume {
@@ -98,11 +119,11 @@ p {
     font-family: var(--font-body);
     margin-left: 10px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 15px;
 }
 
@@ -127,20 +148,9 @@ h5 {
     gap: 5px;
 }
 
-.descripcion-perfume h5 img {
+.card-descripcion-perfume h5 img {
     width: 40px;
     height: auto;
-}
-
-.chip {
-    display: inline-block;
-    padding: 0 25px;
-    height: 20px;
-    font-size: 12px;
-    line-height: 20px;
-    border-radius: 25px;
-    background: var(--color-chip);
-    font-family: var(--font-body);
 }
 
 a {
@@ -148,31 +158,34 @@ a {
     color: black;
 }
 
-.div-piramide-olfativa, .div-valoraciones {
+.div-piramide-olfativa, .div-valoraciones, .div-similares {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
-.div-padre-piramide, .div-padre-valoraciones {
+.div-padre-piramide, .div-padre-valoraciones, .div-padre-similares {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 25vh;
+    margin-top: 50px;
 }
 
-.notas {
+.div-padre-valoraciones {
+    height: auto;
+}
+
+.card-notas, .card-similares, .card-valoracion {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 45vh;
-    height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
-    background: var(--color-cards);
-    box-shadow: var(--shadow-cards);
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.card-similares {
+    width: 13vw;
 }
 
 .div-padre-img-notas {
@@ -194,4 +207,42 @@ a {
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
     gap: 10px;
+}
+
+.card-valoracion {
+    width: 40vw;
+}
+
+.titulo-valoracion {
+    display: flex;
+    justify-content: center;
+}
+
+.valoracion-secciones-titulos {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.iconos-valoracion {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.div-epoca-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.epoca-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.epoca-checkbox img {
+    width: 20px;
+    height: auto;
+    margin: 10px;
 }

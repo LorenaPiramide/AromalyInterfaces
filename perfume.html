@@ -30,7 +30,7 @@
     </header>
     <div class="perfume">
         <div class="img-perfume"><img src="artwork/perfume info/Grand-Soir.png"></div>
-        <div class="descripcion-perfume">
+        <div class="card-descripcion-perfume">
             <h1>Grand Soir</h1>
             <a href="perfume.html">
                 <img class="logo-marca-perfume"
@@ -67,7 +67,7 @@
     <div class="div-piramide-olfativa">
         <h1>Pirámide olfativa</h1>
         <div class="div-padre-piramide">
-            <div class="notas">
+            <div class="card-notas">
                 <h2>Notas de salida</h2>
                 <div class="div-padre-img-notas">
                     <div class="img-nota"></div>
@@ -81,7 +81,7 @@
                     <a class="chip" href="perfume.html">Caramelo</a>
                 </div>
             </div>
-            <div class="notas">
+            <div class="card-notas">
                 <h2>Notas de corazón</h2>
                 <div class="div-padre-img-notas">
                     <div class="img-nota"></div>
@@ -95,7 +95,7 @@
                     <a class="chip" href="perfume.html">Caramelo</a>
                 </div>
             </div>
-            <div class="notas">
+            <div class="card-notas">
                 <h2>Notas base</h2>
                 <div class="div-padre-img-notas">
                     <div class="img-nota"></div>
@@ -112,17 +112,61 @@
         </div>
     </div>
     <div class="div-valoraciones">
-        <h1>Tu valoración</h1>
+        <h1>Valoraciones</h1>
         <div class="div-padre-valoraciones">
-            <div class="div-tu-valoracion">
+            <div class="card-valoracion">
+                <div class="titulo-valoracion"><h2>Tu valoración</h2></div>
+                <div class="valoracion-secciones-titulos">
+                    <img class="iconos-valoracion" src="./artwork/cards icons/calendar.png" alt="Icono calendario Época">
+                    Época del año:
+                </div>
+                <div class="div-epoca-checkbox">
+                    <label class="epoca-checkbox">
+                        <input type="checkbox">
+                        <img src="./artwork/cards icons/estaciones/snowman.png" alt="Icono invierno">
+                        Invierno
+                    </label>
+                    <label class="epoca-checkbox">
+                        <input type="checkbox">
+                        <img src="./artwork/cards icons/estaciones/leaf.png" alt="Icono primavera">
+                        Primavera
+                    </label>
+                    <label class="epoca-checkbox">
+                        <input type="checkbox">
+                        <img src="./artwork/cards icons/estaciones/sun.png" alt="Icono verano">
+                        Verano
+                    </label>
+                    <label class="epoca-checkbox">
+                        <input type="checkbox">
+                        <img src="./artwork/cards icons/estaciones/maple-leaf.png" alt="Icono otoño">
+                        Otoño
+                    </label>
+                </div>
+                <div class="valoracion-secciones-titulos">
+                    <img class="iconos-valoracion" src="./artwork/cards icons/clock.svg" alt="Icono reloj duración">
+                    Duración:
+                </div>
+                <input class="range-slider" type="range">
+            </div>
+            <div class="card-valoracion">
+                <div class="titulo-valoracion"><h2>Valoración media</h2></div>
+            </div>
+        </div>
+    </div>
+    <div class="div-similares">
+        <h1>Perfumes similares</h1>
+        <div class="div-padre-similares">
+            <div class="card-similares">
 
             </div>
-            <div class="div-valoracion-media">
+            <div class="card-similares">
+
+            </div>
+            <div class="card-similares">
 
             </div>
         </div>
 
     </div>
 </body>
-
 </html>
