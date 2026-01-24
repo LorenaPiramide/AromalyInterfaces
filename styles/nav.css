@@ -17,11 +17,9 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     padding: 0 20px;
     margin: 0;
     height: 80px;
-
     background: rgba(164, 140, 123, 0.75);
     backdrop-filter: blur(8px);
 }
@@ -29,7 +27,6 @@ body {
 .logo-aromaly {
     margin-right: auto;
     margin-left: auto;
-
     display: flex;
     justify-content: center;
 }
@@ -44,7 +41,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: var(--color-buttons);
     border-radius: 20px;
     border: none;
@@ -68,7 +64,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     margin-top: 40px;
 }
 
@@ -76,45 +71,54 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     width: 70vh;
     height: auto;
     padding: 30px;
     border-radius: 20px;
-
     background-color: var(--color-cards);
+    box-shadow: var(--shadow-cards);
 }
 
-h1 {
+h1, h2 {
     margin-left: 10px;
     font-family: var(--font-titles);
     font-size: 25px;
-    
+    font-weight: 500;
 }
 
 .logo-marca-perfume {
-    
     width: 200px;
     height: auto;
     margin-left: 5px;
     filter: var(--filter-logo-brand);
 }
 
+h5,
 p {
-    font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-body);
     margin-left: 10px;
-}
-
-h5,p {
-    margin-left: 10px;
-    font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
     font-size: 15px;
 }
 
-.familia-olfativa {
+h5 {
+    font-size: 18px;
+    margin: 15px;
+}
+
+.datos-base-perfume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.datos-base {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 .genero {
@@ -128,7 +132,7 @@ h5,p {
     height: auto;
 }
 
-.chip-familia-olfativa {
+.chip {
     display: inline-block;
     padding: 0 25px;
     height: 20px;
@@ -136,41 +140,39 @@ h5,p {
     line-height: 20px;
     border-radius: 25px;
     background: var(--color-chip);
+    font-family: var(--font-body);
 }
 
 a {
-    display: inline-block;
     text-decoration: none;
     color: black;
 }
 
-.piramide-olfativa {
+.div-piramide-olfativa, .div-valoraciones {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
 
-.div-padre-piramide {
+.div-padre-piramide, .div-padre-valoraciones {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
     width: 100%;
-    height: 30vh;
+    height: 25vh;
 }
 
 .notas {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 45vh;
     height: auto;
-
     padding-left: 20px;
-
+    padding-right: 20px;
     border-radius: 25px;
-    background: #DDD5CC;
+    background: var(--color-cards);
+    box-shadow: var(--shadow-cards);
 }
 
 .div-padre-img-notas {
@@ -182,6 +184,14 @@ a {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    margin-left: 10px;
     border-radius: 50%;
     background-color: white;
+}
+
+.div-padre-nombre-notas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 10px;
 }

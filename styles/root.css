@@ -1,8 +1,16 @@
 :root {
-    --color-fondo-degradado: linear-gradient(0deg,rgba(239, 236, 230, 1) 0%,  rgba(157, 131, 111, 1)100%);
+    /* --color-fondo-degradado: linear-gradient(0deg,rgba(239, 236, 230, 1) 0%,  rgba(157, 131, 111, 1)100%); */
+    --color-fondo-degradado: linear-gradient(
+        to bottom,
+        rgba(157, 131, 111, 1) 0%,
+        rgba(239, 236, 230, 1) 50%,
+        rgba(157, 131, 111, 1) 100%
+    );
+    --shadow-cards: 0 4px 15px rgba(0, 0, 0, 0.25);
     --color-cards: #DDD5CC;
     --color-buttons: #FBF7F4;
     --color-chip: rgba(191, 167, 150, 0.75);
-    --font-titles: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-titles: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --filter-logo-brand: drop-shadow(-1px -1px 0 black);
 }
