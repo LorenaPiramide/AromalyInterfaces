@@ -1,0 +1,111 @@
+/*El modal siempre está en el HTML, solo que está oculto hasta que se activa el checkbox*/
+
+/* Fondo y posición del modal */
+.modal-login,
+.modal-register {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;           /* Modal invisible por defecto */
+    pointer-events: none; /* No se puede interactuar con él */
+    transition: opacity 0.3s;
+    z-index: 100;
+}
+
+/* Cuando el checkbox esté marcado, hacemos visible el modal */
+#toggle-login:checked ~ .modal-login,
+#toggle-register:checked ~ .modal-register {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.switch-modal {
+    color: var(--color-buttons-slider);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-modal:hover {
+    opacity: 0.7;
+}
+
+.card-login {
+    position: relative; /* Para que la X se vea */
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--color-cards);
+    box-shadow: var(--shadow-cards);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close:hover {
+    transform: scale(1.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.username-form,
+.password-form {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-buttons-slider);
+    padding-left: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.username-form:focus,
+.password-form:focus {
+    outline: none;
+    border-bottom: 2px solid var(--color-buttons-slider);
+}
+
+.username-form:hover,
+.password-form:hover {
+    box-shadow: none;
+    border-color: var(--color-buttons-slider);
+}
+
+.boton-login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid var(--color-buttons-slider);
+    color: var(--color-buttons-slider);
+    transition: all 0.5s;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.boton-login:hover {
+    background: var(--color-buttons-slider);
+    color: white;
+}
+
+.p-modal {
+    font-size: 15px;
+}
