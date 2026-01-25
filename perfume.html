@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/perfume.css">
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,12 +18,15 @@
 <body>
     <header>
         <div class="fixed">
-            <nav class="nav-aromaly"> <button><img src="artwork/nav-icons/list.png"></button>
-                <button>
-                    <img src="artwork/nav-icons/busqueda.png">
-                </button>
+            <nav class="nav-aromaly">
+                <label class="menu-button" for="toggle-menu">
+                    <img src="artwork/nav-icons/menu.png" alt="Menú">
+                </label>
+                <label>
+                    <img src="artwork/nav-icons/busqueda.png" alt="Búsqueda">
+                </label>
                 <a class="logo-aromaly" href="perfume.html"><!--Aquí va el index.html, pero como aún no lo tengo, pongo esta-->
-                    <img src="artwork/nav-icons/aromaly-logo-edit.png">
+                    <img src="artwork/nav-icons/aromaly-logo-edit.png" alt="Logo web">
                 </a>
                 <label for="toggle-login" class="button-user"> <!--toggle login es para el modal-->
                     <img src="artwork/nav-icons/user.png">
@@ -30,6 +34,20 @@
             </nav>
         </div>
     </header>
+    
+    <!--MENÚ-->
+    <input type="checkbox" id="toggle-menu" class="toggle-menu">
+    <div class="sidebar-menu">
+        <ul>
+            <li><a href="">Perfumes</a></li>
+            <li><a href="">Perfumistas</a></li>
+            <li><a href="">Listas</a></li>
+            <li><a href="">Marcas</a></li>
+        </ul>
+    </div>
+    <label for="toggle-menu" class="overlay"></label><!--Fondo oscuro-->
+    
+    <!--MODALES-->
     <input type="radio" id="toggle-login" name="auth-modal" hidden> <!--Checkbox oculto para el modal-->
     <input type="radio" id="toggle-register" name="auth-modal" hidden> <!--Lo mismo para el registro-->
     <input type="radio" id="toggle-none" name="auth-modal" hidden checked> <!--toggle none cierra todo (por eso se necesita en close) y auth modal permite que solo uno esté activo-->
@@ -60,6 +78,8 @@
             </div>
         </div>
     </div>
+
+    <!--PERFUME INFO PRINCIPAL-->
     <div class="perfume">
         <div class="img-perfume"><img src="artwork/perfume-info/Grand-Soir.png"></div>
         <div class="card-descripcion-perfume">
@@ -96,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <!--PIRÁMIDE OLFATIVA-->
     <div class="div-piramide-olfativa">
         <h1>Pirámide olfativa</h1>
         <div class="div-padre-piramide">
@@ -143,6 +165,8 @@
             </div>
         </div>
     </div>
+
+    <!--VALORACIONES-->
     <div class="div-valoraciones">
         <h1>Valoraciones</h1>
         <div class="div-padre-valoraciones">
@@ -301,6 +325,8 @@
             </div>
         </div>
     </div>
+
+    <!--LISTADO DE PERFUMES SIMILARES-->
     <div class="div-similares">
         <h1>Perfumes similares</h1>
         <div class="div-padre-similares">
@@ -399,6 +425,8 @@
             </div>
         </div>
     </div>
+
+    <!--FOOTER-->
     <footer>
         <hr>
         <div class="div-footer">
