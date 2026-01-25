@@ -6,12 +6,17 @@
         rgba(239, 236, 230, 1) 50%,
         rgba(157, 131, 111, 1) 100%
     );
-    --shadow-cards: 0 4px 15px rgba(0, 0, 0, 0.25);
-    --color-cards: #DDD5CC;
-    --color-buttons-nav: #FBF7F4;
-    --color-buttons-slider: #3A2E2A;
-    --color-chip: rgba(191, 167, 150, 0.75);
     --font-titles: 'Montserrat', sans-serif;
     --font-body: 'Inter', sans-serif;
     --filter-logo-brand: drop-shadow(-1px -1px 0 black);
+    --shadow-cards: 0 4px 15px rgba(0, 0, 0, 0.25);
+    --color-buttons-nav: #FBF7F4;
+    --color-cards: #DDD5CC;
+    --color-chip: rgba(191, 167, 150, 0.75);
+    --color-buttons-slider: #3A2E2A;
+    --color-active-slider: #f75;
+    --color-disable-slider: #ffffff;
+    --color-active-star: gold;
+    --color-disable-star: lightgrey;
+    --shadow-star: 1px 1px 3px black;
 }
