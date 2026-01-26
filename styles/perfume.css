@@ -1,35 +1,6 @@
-body {
-    background: var(--color-fondo-degradado);
-    margin: 0;
-    min-height: 100vh;
-    padding-top: 80px;
-}
-
 .img-perfume img {
     width: 45vh;
     height: auto;
-}
-
-.perfume,
-.inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
-}
-
-h1, 
-h2 {
-    margin-left: 10px;
-    font-family: var(--font-titles);
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 0px;
-}
-
-h1 {
-    font-size: 30px;
 }
 
 .logo-marca-perfume {
@@ -37,19 +8,6 @@ h1 {
     height: auto;
     margin-left: 5px;
     filter: var(--filter-logo-brand);
-}
-
-h5,
-p {
-    font-family: var(--font-body);
-    margin-left: 10px;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-h5 {
-    font-size: 20px;
-    margin: 15px;
 }
 
 .datos-base-perfume {
@@ -71,11 +29,6 @@ h5 {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 .div-piramide-olfativa, 
@@ -322,79 +275,4 @@ a {
 
 .nombre-perfume-similar p {
     margin-left: 20px;
-}
-
-.boton {
-    padding: 5px 10px;
-    background: var(--color-buttons-slider);
-    color: white;
-    border-radius: 6px;
-    transition: 0.3s;
-    border: 1px solid transparent;
-}
-
-.boton:hover {
-    background: var(--color-cards);
-    color: var(--color-buttons-slider);
-    border: 1px solid var(--color-buttons-slider);
-}
-
-footer {
-    margin-top: 50px;
-}
-
-hr {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.logo-footer {
-    width: 170px;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 80px;
-}
-
-.div-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-media {
-    margin-right: 80px;
-}
-
-.social-media img {
-    width: 25px;
-    height: auto;
-    margin-right: 10px;
-    filter: invert(100%) brightness(200%);
-}
-
-.social-media img:hover {
-    filter: none;
-}
-
-.texto-inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-inicio {
-    width: 30vw;
-    height: auto;
-    margin-right: 40px;
-}
-
-.img-inicio img {
-    width: 700px;
-    height: auto;
-    border-radius: 10%;
-}
-
-.btn-perfume {
-    
 }
