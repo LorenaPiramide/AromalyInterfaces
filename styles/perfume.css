@@ -1,36 +1,3 @@
-.img-perfume img {
-    width: 45vh;
-    height: auto;
-}
-
-.logo-marca-perfume {
-    width: 200px;
-    height: auto;
-    margin-left: 5px;
-    filter: var(--filter-logo-brand);
-}
-
-.datos-base-perfume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 40px;
-}
-
-.datos-base {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 0;
-    margin: 0;
-}
-
-.genero {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
 .div-piramide-olfativa, 
 .div-valoraciones, 
 .div-similares {

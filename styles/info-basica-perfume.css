@@ -5,3 +5,36 @@
     align-items: center;
     margin-top: 40px;
 }
+
+.img-perfume img {
+    width: 45vh;
+    height: auto;
+}
+
+.info-base-logo-marca-perfume {
+    width: 200px;
+    height: auto;
+    margin-left: 5px;
+    filter: var(--filter-logo-brand);
+}
+
+.datos-base-perfume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.datos-base {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.info-genero {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
