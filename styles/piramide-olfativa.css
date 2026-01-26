@@ -1,0 +1,36 @@
+.div-piramide-olfativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.div-padre-piramide {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25vh;
+    margin-top: 50px;
+}
+
+.div-piramide-img-notas {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-piramide-nombre-notas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.img-piramide-nota {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
