@@ -1,0 +1,210 @@
+.div-valoraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.div-padre-valoraciones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25vh;
+    margin-top: 50px;
+}
+
+
+.div-padre-valoraciones {
+    height: auto;
+}
+
+.titulo-valoracion {
+    display: flex;
+    justify-content: center;
+}
+
+.valoracion-secciones-titulos {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.iconos-valoracion {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.div-valoracion-epoca-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.valoracion-epoca-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.valoracion-epoca-checkbox input {
+    display: none;
+}
+
+.valoracion-epoca-checkbox img {
+    width: 20px;
+    height: auto;
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.resultado-valoracion-epoca {
+    display: flex;
+}
+
+.resultado-valoracion-epoca img {
+    margin-left: 20px;
+}
+
+.resultado-valoracion-chip {
+    margin-left: 15px;
+}
+
+.rating-resultado-valoracion {
+    text-shadow: var(--shadow-star);
+}
+
+.rating, .rating-resultado-valoracion {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/*CHECKBOX ÉPOCA*/
+.valoracion-epoca-checkbox img:hover {
+    transform: scale(1.5);
+}
+
+.valoracion-epoca-checkbox input:checked + img {
+    filter: grayscale(0%) brightness(1.2) saturate(2);
+    transform: scale(1.5);
+}
+
+/*SLIDER*/
+.range-slider-duracion, .range-slider-precio {
+    height: 60px;
+}
+
+.range-slider-duracion ul,
+.range-slider-precio ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Línea del slider*/
+.range-slider-duracion ul::before,
+.range-slider-precio ul::before {
+    content: '';
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    top: 15px;
+    height: 4px;
+    background: var(--color-disable-slider);
+}
+
+.range-slider-duracion li,
+.range-slider-precio li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+/*Quitamos el radio*/
+.range-slider-duracion input, 
+.range-slider-precio input {
+    display: none;
+}
+
+/*Cursor*/
+.range-slider-duracion label, 
+.range-slider-precio label {
+    cursor: pointer;
+}
+
+/*Estilo de los puntos del slider por defecto*/
+.range-slider-duracion label::before, 
+.range-slider-precio label::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 10px auto;
+    background: var(--color-buttons-slider);
+    border-radius: 50%;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.range-slider-duracion label:hover::before,
+.range-slider-precio label:hover::before {
+    transform: scale(1.5);
+}
+
+/*Punto activo*/
+.range-slider-duracion input:checked + label::before, 
+.range-slider-precio input:checked + label::before {
+    background: var(--color-active-slider);
+    transform: scale(1.2);
+}
+
+/*Texto del slider*/
+.range-slider-duracion span, 
+.range-slider-precio span {
+    font-size: 14px;
+}
+
+/*Texto del slider seleccionado*/
+.range-slider-duracion input:checked + label span, 
+.range-slider-precio input:checked + label span {
+    display: block;
+    color: var(--color-active-slider);
+}
+
+/*RATING*/
+.div-rating {
+    display: flex;
+}
+
+.rating {
+    direction: rtl; /*Si no se pone esto, queda del revés*/
+}
+
+.rating input {
+    display: none; /*Quitamos la bola del input*/
+}
+
+.rating label {
+    color: var(--color-disable-star);/*Estrellas en gris*/
+    cursor: pointer;
+    text-shadow: var(--shadow-star);
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: var(--color-active-star);
+}
+
+.star {
+    color: var(--color-disable-star);
+}
+
+.star-activa {
+    color: var(--color-active-star);
+}
